@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Detail Properti - HomeSpace | Informasi Hunian Lengkap</title>
+  <meta name="description" content="Detail lengkap properti: spesifikasi, fitur, lokasi, biaya bulanan, dan kontak agen untuk tur dan informasi lanjutan.">
+  <meta name="keywords" content="detail properti, tur properti, biaya sewa, spesifikasi hunian, agen properti">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: HomeSpace
+  * Template URL: https://bootstrapmade.com/homespace-bootstrap-real-estate-template/
+  * Updated: Jul 05 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="property-details-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">HomeSpace</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="about.html">Tentang</a></li>
+          <li><a href="properties.html">Properti</a></li>
+          <li><a href="services.html">Layanan</a></li>
+          <li><a href="agents.html">Agen</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="dropdown"><a href="#"><span>Halaman Lainnya</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="property-details.html" class="active">Detail Properti</a></li>
+              <li><a href="service-details.html">Detail Layanan</a></li>
+              <li><a href="agent-profile.html">Profil Agen</a></li>
+              <li><a href="blog-details.html">Detail Blog</a></li>
+              <li><a href="terms.html">Syarat</a></li>
+              <li><a href="privacy.html">Privasi</a></li>
+              <li><a href="404.html">404</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="properties.html">Mulai Sekarang</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Minimalist Page Title -->
+    <div class="minimalist-page-title">
+      <div class="container">
+        <div class="title-wrapper">
+          <h1 class="page-title">Detail Properti</h1>
+          <nav class="breadcrumb-nav">
+            <ol>
+              <li><a href="index.html">Beranda</a></li>
+              <li class="separator">/</li>
+              <li class="current">Detail Properti</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div><!-- End Minimalist Page Title -->
+
+    <!-- Property Details Section -->
+    <section id="property-details" class="property-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-7">
+
+            <!-- Property Hero Section -->
+            <div class="property-hero mb-5" data-aos="fade-up" data-aos-delay="200">
+              <div class="hero-image-container">
+                <div class="property-gallery-slider swiper init-swiper">
+                  <script type="application/json" class="swiper-config">
+                    {
+                      "loop": true,
+                      "speed": 600,
+                      "autoplay": {
+                        "delay": 5000
+                      },
+                      "navigation": {
+                        "nextEl": ".swiper-button-next",
+                        "prevEl": ".swiper-button-prev"
+                      },
+                      "thumbs": {
+                        "swiper": ".property-thumbnails-slider"
+                      }
+                    }
+                  </script>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="assets/img/real-estate/Kondominium Eksklusif Seminyak.webp" class="img-fluid hero-image" alt="Property Main Image">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/real-estate/Kondominium Eksklusif Seminyak 1.webp" class="img-fluid hero-image" alt="Tampilan Interior">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/real-estate/Kondominium Eksklusif Seminyak 2.webp" class="img-fluid hero-image" alt="Tampilan Eksterior">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/real-estate/Kondominium Eksklusif Seminyak 3.webp" class="img-fluid hero-image" alt="Features">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/real-estate/Kondominium Eksklusif Seminyak 4.webp" class="img-fluid hero-image" alt="Foto Lainnya">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/real-estate/Kondominium Eksklusif Seminyak 5.webp" class="img-fluid hero-image" alt="Exterior Detail">
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+
+              
+            </div><!-- End Property Hero -->
+
+            <!-- Property Information -->
+            <div class="property-info mb-5" data-aos="fade-up" data-aos-delay="300">
+              <div class="property-header">
+                <h1 class="property-title">Kondominium Eksklusif Seminyak</h1>
+                <div class="property-meta">
+                  <span class="address"><i class="bi bi-geo-alt"></i> Seminyak, Bali</span>
+                  <span class="listing-id">ID: VLM 582 901</span>
+                </div>
+              </div>
+            
+              <div class="pricing-section">
+                <div class="main-price">Rp2.200.000.000</div>
+                <div class="price-breakdown">
+                  <span class="deposit">Dijual</span>
+                  <span class="available">Tersedia segera</span>
+                </div>
+              </div>
+            
+              <div class="quick-stats">
+                <div class="stat-grid">
+                  <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-bed"></i></div>
+                    <div class="stat-content">
+                      <span class="stat-number">4</span>
+                      <span class="stat-label">Kamar Tidur</span>
+                    </div>
+                  </div>
+                  
+                  <div class="stat-card">
+                    <div class="stat-icon"><i class="bi bi-droplet"></i></div>
+                    <div class="stat-content">
+                      <span class="stat-number">3</span>
+                      <span class="stat-label">Kamar Mandi</span>
+                    </div>
+                  </div>
+                  <div class="stat-card">
+                    <div class="stat-icon"><i class="bi bi-arrows-angle-expand"></i></div>
+                    <div class="stat-content">
+                      <span class="stat-number">180</span>
+                      <span class="stat-label">m²</span>
+                    </div>
+                  </div>
+                  <div class="stat-card">
+                    <div class="stat-icon"><i class="bi bi-car-front"></i></div>
+                    <div class="stat-content">
+                      <span class="stat-number">2</span>
+                      <span class="stat-label">Parkir</span>
+                    </div>
+                  </div>
+                  <div class="stat-card">
+                    <div class="stat-icon"><i class="bi bi-water"></i></div>
+                    <div class="stat-content">
+                      <span class="stat-number">1</span>
+                      <span class="stat-label">Kolam Pribadi</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Property Information -->
+
+            <!-- Description & Features -->
+            <div class="property-details mb-5" data-aos="fade-up" data-aos-delay="400">
+              <h3>Deskripsi Properti</h3>
+              <p>Kondominium eksklusif di Seminyak, Bali. Memiliki 4 kamar tidur, 3 kamar mandi, kolam pribadi, dan fasilitas premium untuk keluarga besar.</p>
+
+              <div class="features-grid mt-4">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h5>Fitur Interior</h5>
+                    <ul class="feature-list">
+                      <li><i class="bi bi-check2"></i> Ruang tamu luas</li>
+                      <li><i class="bi bi-check2"></i> Dapur modern lengkap</li>
+                      <li><i class="bi bi-check2"></i> Kamar tidur utama dengan walk-in closet</li>
+                      <li><i class="bi bi-check2"></i> Ventilasi alami optimal</li>
+                      <li><i class="bi bi-check2"></i> Material premium</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h5>Fasilitas Gedung</h5>
+                    <ul class="feature-list">
+                      <li><i class="bi bi-check2"></i> Kolam renang pribadi</li>
+                      <li><i class="bi bi-check2"></i> Area parkir 2 mobil</li>
+                      <li><i class="bi bi-check2"></i> Balkon dengan view pantai</li>
+                      <li><i class="bi bi-check2"></i> Sistem keamanan 24 jam</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Description & Features -->
+
+
+
+          </div>
+
+          <!-- Sidebar -->
+          <div class="col-lg-5">
+            <div class="sticky-sidebar">
+
+
+
+              <!-- Agent Card -->
+              <div class="agent-card mb-4" data-aos="fade-up" data-aos-delay="350">
+                <div class="agent-header">
+                  <div class="agent-avatar">
+                    <img src="assets/img/person/person-f-12.webp" class="img-fluid" alt="Agent Photo">
+                    <div class="online-status"></div>
+                  </div>
+                  <div class="agent-info">
+                    <h4>Ketut Adi</h4>
+                    <p class="agent-role">Bali Elite Realty</p>
+                    <div class="agent-rating">
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <span class="rating-text">5.0 (127 reviews)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="agent-contact">
+                  <div class="contact-item">
+                    <i class="bi bi-telephone"></i>
+                    <span>+62 812-234-5678</span>
+                  </div>
+                  <div class="contact-item">
+                    <i class="bi bi-envelope"></i>
+                    <span>K.Adi@example.com</span>
+                  </div>
+                </div>
+
+                <div class="agent-actions mt-3">
+                  <button class="btn btn-outline w-100">
+                    <i class="bi bi-chat-dots"></i>
+                    Hubungi Sekarang
+                  </button>
+                </div>
+              </div><!-- End Agent Card -->
+
+              <!-- Contact Form -->
+              <div class="contact-form-card mb-4" data-aos="fade-up" data-aos-delay="450">
+                <h4>Minta Informasi</h4>
+                <form action="forms/contact.php" method="post" class="php-email-form">
+                  <div class="row">
+                    <div class="col-12 mb-3">
+                      <input type="text" name="name" class="form-control" placeholder="Nama Lengkap" required="">
+                    </div>
+                    <div class="col-12 mb-3">
+                      <input type="email" name="email" class="form-control" placeholder="Alamat Email" required="">
+                    </div>
+                    <div class="col-12 mb-3">
+                      <input type="tel" name="phone" class="form-control" placeholder="Nomor Telepon">
+                    </div>
+
+                    <div class="col-12 mb-3">
+                      <textarea name="message" class="form-control" rows="4" placeholder="Pertanyaan tambahan atau waktu tur yang diinginkan..."></textarea>
+                    </div>
+                  </div>
+
+                  <div class="loading">Memuat</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Permintaan Anda telah berhasil dikirim!</div>
+
+                  <button type="submit" class="btn btn-primary w-100">Kirim Permintaan</button>
+                </form>
+              </div><!-- End Contact Form -->
+
+              <!-- Rental Calculator -->
+              <div class="calculator-card mb-4" data-aos="fade-up" data-aos-delay="550">
+                <h4>Kalkulator Biaya Bulanan</h4>
+                <div class="calculator-content">
+                  <div class="cost-item">
+                    <span class="cost-label">Sewa Bulanan</span>
+                    <span class="cost-value">Rp9.000.000</span>
+                  </div>
+                  <div class="cost-item">
+                    <span class="cost-label">Utilitas (perkiraan)</span>
+                    <span class="cost-value">Rp350.000</span>
+                  </div>
+                  <div class="cost-item">
+                    <span class="cost-label">Parkir</span>
+                    <span class="cost-value">Rp200.000</span>
+                  </div>
+                  <div class="cost-item">
+                    <span class="cost-label">Biaya Pemeliharaan</span>
+                    <span class="cost-value">Rp50.000</span>
+                  </div>
+                  <div class="total-cost">
+                    <span class="total-label">Total Biaya Bulanan</span>
+                    <span class="total-value">Rp9.600.000</span>
+                  </div>
+                </div>
+              </div><!-- End Rental Calculator -->
+
+
+
+            </div>
+          </div><!-- End Sidebar -->
+
+        </div>
+
+        <!-- Location Section -->
+        <div class="location-section mt-5" data-aos="fade-up" data-aos-delay="700">
+          <h3>Lokasi &amp; Lingkungan</h3>
+          <div class="row">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=-8.7039,115.1680&t=k&z=13&ie=UTF8&iwloc=&output=embed"
+                  width="100%"
+                  height="560"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0">
+                </iframe>
+              </div>
+            </div>
+            
+            <style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              width: 100%;
+              max-width: 820px;
+              margin: 0 auto;
+              height: 560px;
+            }
+            
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              width: 100%;
+              height: 100%;
+            }
+            </style>            
+            <div class="col-lg-4">
+              <div class="neighborhood-info">
+                <h5>Keunggulan Lingkungan</h5>
+              
+                <!-- Pantai Seminyak -->
+                <div class="poi-item">
+                  <i class="bi bi-tsunami"></i> <!-- Icon gelombang laut -->
+                  <div class="poi-content">
+                    <span class="poi-name">Pantai Seminyak</span>
+                    <span class="poi-distance">0,2 km</span>
+                  </div>
+                </div>
+              
+                <!-- Beachwalk Mall -->
+                <div class="poi-item">
+                  <i class="bi bi-bag-fill"></i> <!-- Icon belanja -->
+                  <div class="poi-content">
+                    <span class="poi-name">Beachwalk Mall</span>
+                    <span class="poi-distance">1 km</span>
+                  </div>
+                </div>
+              
+                <!-- Potato Head Beach Club -->
+                <div class="poi-item">
+                  <i class="bi bi-cup-straw"></i> <!-- Icon hiburan/club minuman -->
+                  <div class="poi-content">
+                    <span class="poi-name">Potato Head Beach Club</span>
+                    <span class="poi-distance">1,5 km</span>
+                  </div>
+                </div>
+              
+                <!-- Bandara Internasional Ngurah Rai -->
+                <div class="poi-item">
+                  <i class="bi bi-airplane-fill"></i> <!-- Icon pesawat -->
+                  <div class="poi-content">
+                    <span class="poi-name">Bandara Internasional Ngurah Rai</span>
+                    <span class="poi-distance">10 km</span>
+                  </div>
+                </div>
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
+        <!-- End Location Section -->
+
+      </div>
+
+    </section><!-- /Property Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">HomeSpace</span>
+          </a>
+          <p>HomeSpace adalah mitra tepercaya untuk membeli, menjual, dan menyewa properti. Kami menyediakan listing terverifikasi, analisis pasar, dan pendampingan profesional hingga transaksi tuntas.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://wa.me/6281234567890" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://instagram.com/homespace" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://tiktok.com/@homespace" target="_blank"><i class="bi bi-tiktok"></i></a>
+            <a href="https://x.com/homespace" target="_blank"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Tautan</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Tentang kami</a></li>
+            <li><a href="services.html">Layanan</a></li>
+            <li><a href="terms.html">Syarat Layanan</a></li>
+            <li><a href="privacy.html">Kebijakan Privasi</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Layanan Kami</h4>
+          <ul>
+            <li><a href="properties.html">Pencarian Properti</a></li>
+            <li><a href="services.html">Penjualan Properti</a></li>
+            <li><a href="properties.html">Sewa Properti</a></li>
+            <li><a href="services.html">Penilaian Properti</a></li>
+            <li><a href="contact.html">Konsultasi Investasi</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Hubungi Kami</h4>
+          <p>A108 Adam Street</p>
+          <p>New York, NY 535022</p>
+          <p>Amerika Serikat</p>
+          <p class="mt-4"><strong>Telepon:</strong> <span>+1 5589 55488 55</span></p>
+          <p><strong>Email:</strong> <span>info@example.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Hak Cipta</span> <strong class="px-1 sitename">HomeSpace</strong> <span>Hak Cipta Dilindungi</span></p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
