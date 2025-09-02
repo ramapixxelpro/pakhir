@@ -1,0 +1,701 @@
+/*--------------------------------------------------------------
+# Agents Page Specific Styles
+--------------------------------------------------------------*/
+
+/* Page Title Section */
+.page-title {
+  padding: 120px 0 80px;
+  background: linear-gradient(135deg, var(--background-color) 0%, color-mix(in srgb, var(--accent-color), transparent 95%) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.page-title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../img/bg/dotted-world-1.webp') center/cover;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.page-title .section-header {
+  position: relative;
+  z-index: 2;
+}
+
+.page-title .header-badge {
+  background: rgba(212, 175, 55, 0.15);
+  color: var(--accent-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.page-title .header-badge:hover {
+  background: rgba(212, 175, 55, 0.25);
+  border-color: rgba(212, 175, 55, 0.4);
+  transform: translateY(-2px);
+}
+
+.page-title .header-badge i {
+  font-size: 1.1rem;
+}
+
+.page-title h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.page-title .highlight-text {
+  color: var(--accent-color);
+  position: relative;
+}
+
+.page-title .highlight-text::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-color), transparent);
+  border-radius: 2px;
+}
+
+.page-title .header-description {
+  font-size: 1.2rem;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Agents Section */
+.agents {
+  padding: 80px 0;
+  background: var(--background-color);
+}
+
+.agents .section-header {
+  margin-bottom: 3rem;
+}
+
+.agents .header-badge {
+  background: rgba(212, 175, 55, 0.15);
+  color: var(--accent-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.agents .header-badge:hover {
+  background: rgba(212, 175, 55, 0.25);
+  border-color: rgba(212, 175, 55, 0.4);
+  transform: translateY(-2px);
+}
+
+.agents .header-badge i {
+  font-size: 1.1rem;
+}
+
+.agents h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.agents .highlight-text {
+  color: var(--accent-color);
+  position: relative;
+}
+
+.agents .highlight-text::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-color), transparent);
+  border-radius: 2px;
+}
+
+.agents .header-description {
+  font-size: 1.1rem;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Agent Cards */
+.agent-card {
+  background: var(--surface-color);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.agent-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-color), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.agent-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+.agent-card:hover::before {
+  opacity: 1;
+}
+
+.agent-photo {
+  position: relative;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.agent-photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(212, 175, 55, 0.2);
+  transition: all 0.3s ease;
+}
+
+.agent-card:hover .agent-photo img {
+  border-color: rgba(212, 175, 55, 0.5);
+  transform: scale(1.05);
+}
+
+.agent-badge {
+  position: absolute;
+  top: 10px;
+  right: 50%;
+  transform: translateX(50%);
+  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), white 20%));
+  color: var(--contrast-color);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+  transition: all 0.3s ease;
+}
+
+.agent-card:hover .agent-badge {
+  transform: translateX(50%) scale(1.1);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+.agent-details {
+  text-align: center;
+}
+
+.agent-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.agent-position {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.agent-location {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.agent-location i {
+  color: var(--accent-color);
+  font-size: 1rem;
+}
+
+.agent-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+}
+
+.stat-number {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.75rem;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.agent-specialties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.specialty-tag {
+  background: rgba(212, 175, 55, 0.1);
+  color: var(--accent-color);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  transition: all 0.3s ease;
+}
+
+.specialty-tag:hover {
+  background: rgba(212, 175, 55, 0.2);
+  border-color: rgba(212, 175, 55, 0.4);
+  transform: translateY(-2px);
+}
+
+.agent-actions {
+  display: flex;
+  justify-content: center;
+}
+
+/* Call to Action Section */
+.call-to-action {
+  padding: 80px 0;
+  background: var(--background-color);
+}
+
+.call-to-action .content {
+  text-align: center;
+}
+
+.call-to-action h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.call-to-action .highlight-text {
+  color: var(--accent-color);
+  position: relative;
+}
+
+.call-to-action .highlight-text::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-color), transparent);
+  border-radius: 2px;
+}
+
+.call-to-action p {
+  font-size: 1.1rem;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.call-to-action .action-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+/* Premium Button */
+.btn-premium {
+  position: relative;
+  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), black 15%));
+  border: none;
+  border-radius: 50px;
+  padding: 0;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+  min-width: 160px;
+  max-width: 180px;
+  display: inline-block;
+}
+
+.btn-premium:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(212, 175, 55, 0.4);
+}
+
+.btn-premium:active {
+  transform: translateY(-2px);
+}
+
+.btn-premium .btn-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.btn-premium .btn-icon {
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.btn-premium:hover .btn-icon {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+.btn-premium .btn-icon i {
+  font-size: 0.9rem;
+  color: var(--contrast-color);
+  transition: all 0.3s ease;
+}
+
+.btn-premium .btn-text {
+  flex: 1;
+  text-align: left;
+}
+
+.btn-premium .btn-title {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--contrast-color);
+  margin-bottom: 0;
+  letter-spacing: 0.3px;
+}
+
+.btn-premium .btn-subtitle {
+  display: none;
+}
+
+.btn-premium .btn-arrow {
+  width: 24px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.btn-premium:hover .btn-arrow {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateX(3px) scale(1.1);
+}
+
+.btn-premium .btn-arrow i {
+  font-size: 0.7rem;
+  color: var(--contrast-color);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .page-title h1 {
+    font-size: 3rem;
+  }
+  
+  .agents h2 {
+    font-size: 2.2rem;
+  }
+  
+  .call-to-action h3 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .page-title {
+    padding: 100px 0 60px;
+  }
+  
+  .page-title h1 {
+    font-size: 2.5rem;
+  }
+  
+  .page-title .header-description {
+    font-size: 1.1rem;
+  }
+  
+  .agents,
+  .call-to-action {
+    padding: 60px 0;
+  }
+  
+  .agents h2 {
+    font-size: 2rem;
+  }
+  
+  .call-to-action h3 {
+    font-size: 2rem;
+  }
+  
+  .agent-card {
+    padding: 1.5rem;
+  }
+  
+  .agent-photo img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .agent-name {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    padding: 80px 0 40px;
+  }
+  
+  .page-title h1 {
+    font-size: 2rem;
+  }
+  
+  .page-title .header-description {
+    font-size: 1rem;
+  }
+  
+  .page-title .header-badge {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+  }
+  
+  .page-title .header-badge i {
+    font-size: 1rem;
+  }
+  
+  .agents,
+  .call-to-action {
+    padding: 40px 0;
+  }
+  
+  .agents h2 {
+    font-size: 1.8rem;
+  }
+  
+  .call-to-action h3 {
+    font-size: 1.8rem;
+  }
+  
+  .call-to-action p {
+    font-size: 1rem;
+  }
+  
+  .agent-card {
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .agent-photo img {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .agent-name {
+    font-size: 1.2rem;
+  }
+  
+  .agent-stats {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .call-to-action .action-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn-premium {
+    width: 100%;
+    max-width: 180px;
+  }
+  
+  .btn-premium .btn-content {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-title h1 {
+    font-size: 1.8rem;
+  }
+  
+  .page-title .header-description {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+  
+  .page-title .header-badge {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+  
+  .page-title .header-badge i {
+    font-size: 0.9rem;
+  }
+  
+  .agents h2 {
+    font-size: 1.6rem;
+    padding: 0 1rem;
+  }
+  
+  .agents .header-description {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+  
+  .call-to-action h3 {
+    font-size: 1.6rem;
+    padding: 0 1rem;
+  }
+  
+  .call-to-action p {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+  
+  .agent-card {
+    padding: 1rem;
+  }
+  
+  .agent-photo img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .agent-name {
+    font-size: 1.1rem;
+  }
+  
+  .agent-position {
+    font-size: 0.8rem;
+  }
+  
+  .agent-location {
+    font-size: 0.8rem;
+  }
+  
+  .stat-number {
+    font-size: 1.1rem;
+  }
+  
+  .stat-label {
+    font-size: 0.7rem;
+  }
+  
+  .specialty-tag {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
+  }
+  
+  .btn-premium .btn-content {
+    padding: 0.625rem 0.875rem;
+  }
+  
+  .btn-premium .btn-icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .btn-premium .btn-arrow {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .btn-premium .btn-icon i {
+    font-size: 0.8rem;
+  }
+  
+  .btn-premium .btn-arrow i {
+    font-size: 0.65rem;
+  }
+  
+  .btn-premium .btn-title {
+    font-size: 0.8rem;
+  }
+  
+  .btn-premium .btn-subtitle {
+    display: none;
+  }
+}
